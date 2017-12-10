@@ -1,4 +1,29 @@
-body{
-    background-image: url("assets/images/starrysky.jpg");
-}
-    
+html { 
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  h1, h4{
+      color: white;
+      font-size: 25px;
+      font-family: 'Spectral SC', serif;
+        text-align: center;
+  }
+
+
+  img{
+      width: 200px;
+      height: 200px;
+  }
+
+  button{
+      background: black;
+      border-style: none;
+      width:  200px;
+      height: 200px;
+      float: left;
+     
+  }
