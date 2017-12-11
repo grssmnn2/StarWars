@@ -4,6 +4,7 @@ $(document).ready(function(){
 var userChoice;
 var vaderTheme = new Audio("vader.mp3");
 var heroTheme = new Audio("saber.mp3");
+var saber = new Audio("shortsaber.mp3");
 
 // create click actions for each character button/image
 
@@ -39,11 +40,15 @@ $("#jarjar").on("click", function(){
 
 $("#vader").on("click", function(){
     // $("#vader").fadeToggle(1000);
-    vaderTheme.play();
+    vaderTheme.play(3000);
     $("#vader").css({
         background: 'red',
         float: 'right'
     });
+});
+
+$("#attack").click(function(){
+    saber.play();
 });
 
 // first click is user hero, second click is enemy to battle

@@ -35,3 +35,9 @@ html {
       background: rgb(235, 84, 84);
       
   }
+
+  #restart{
+      width: 200px;
+      height: 50px;
+      background: rgb(142, 211, 142);
+  }
