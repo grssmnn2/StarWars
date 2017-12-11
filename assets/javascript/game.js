@@ -51,6 +51,10 @@ $("#attack").click(function(){
     saber.play();
 });
 
+$("#restart").click(function(){
+    window.location.reload();
+});
+
 // first click is user hero, second click is enemy to battle
 
 // when clicked, user hero moves above other characters to new row, background color becomes green
