@@ -2,11 +2,14 @@ $(document).ready(function(){
 
 // declare variables
 var userChoice;
+var vaderTheme = new Audio("vader.mp3");
+var heroTheme = new Audio("saber.mp3");
 
 // create click actions for each character button/image
 
 $("#luke").on("click", function(){
     // $("#luke").fadeToggle(1000);
+    heroTheme.play();
     $("#luke").css({
         background: 'green', 
         float: 'right'
@@ -16,6 +19,7 @@ $("#luke").on("click", function(){
 
 $("#leia").on("click", function(){
     // $("#leia").fadeToggle(1000);
+    heroTheme.play();
     $("#leia").css({
         background: 'green',
         float: 'right'
@@ -35,6 +39,7 @@ $("#jarjar").on("click", function(){
 
 $("#vader").on("click", function(){
     // $("#vader").fadeToggle(1000);
+    vaderTheme.play();
     $("#vader").css({
         background: 'red',
         float: 'right'
