@@ -10,30 +10,39 @@ var saber = new Audio("shortsaber.mp3");
 
 $("#luke").on("click", function(){
     // $("#luke").fadeToggle(1000);
-    $(".hero").append("#luke");
+    $('#luke').animate({
+        'marginTop' : "+=300px" //moves down
+        });
+   
     heroTheme.play();
     $("#luke").css({
         background: 'green', 
-        float: 'right'
+        
     });
 
 });
 
 $("#leia").on("click", function(){
     // $("#leia").fadeToggle(1000);
+    $('#leia').animate({
+        'marginTop' : "+=300px" //moves down
+        });
     heroTheme.play();
     $("#leia").css({
         background: 'green',
-        float: 'right'
+    
     });
 
 });
 
 $("#jarjar").on("click", function(){
     // $("#jarjar").fadeToggle(1000);
+    $('#jarjar').animate({
+        'marginTop' : "+=300px" //moves down
+        });
     $("#jarjar").css({
         background: 'red',
-        float: 'right'
+       
     });
 
 });
@@ -41,12 +50,15 @@ $("#jarjar").on("click", function(){
 
 $("#vader").on("click", function(){
     // $("#vader").fadeToggle(1000);
+    $('#vader').animate({
+        'marginTop' : "+=300px" //moves down
+        });
     $(".enemy").append("#vader");
     vaderTheme.play();
     
     $("#vader").css({
         background: 'red',
-        float: 'right'
+        
     });
 });
 // battle button
