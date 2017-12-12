@@ -10,6 +10,7 @@ var saber = new Audio("shortsaber.mp3");
 
 $("#luke").on("click", function(){
     // $("#luke").fadeToggle(1000);
+    $(".hero").append("#luke");
     heroTheme.play();
     $("#luke").css({
         background: 'green', 
@@ -40,17 +41,20 @@ $("#jarjar").on("click", function(){
 
 $("#vader").on("click", function(){
     // $("#vader").fadeToggle(1000);
-    vaderTheme.play(3000);
+    $(".enemy").append("#vader");
+    vaderTheme.play();
+    
     $("#vader").css({
         background: 'red',
         float: 'right'
     });
 });
-
+// battle button
 $("#attack").click(function(){
     saber.play();
 });
 
+// restart game button
 $("#restart").click(function(){
     window.location.reload();
 });
