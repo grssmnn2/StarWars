@@ -6,6 +6,28 @@ var vaderTheme = new Audio("vader.mp3");
 var heroTheme = new Audio("saber.mp3");
 var saber = new Audio("shortsaber.mp3");
 
+// create score object per character
+
+var vader = {
+    health: 50,
+    weaponPower: 10
+}
+
+var luke = {
+    health: 70,
+    weaponPower: 5
+}
+
+var leia = {
+    health: 70,
+    weaponPower: 6
+}
+
+var jar = {
+    health: 30,
+    weaponPower: 12
+}
+
 // create click actions for each character button/image
 
 $("#luke").on("click", function(){
